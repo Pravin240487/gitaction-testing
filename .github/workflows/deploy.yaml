@@ -25,4 +25,4 @@ jobs:
           aws-region: ap-south-1
 
       - name: Sync to S3
-        run: aws s3 sync myapp//package.json s3://gitactions2404 --delete
+        run: aws s3 sync myapp/package.json s3://gitactions2404 --delete
