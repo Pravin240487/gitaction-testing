@@ -17,14 +17,6 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
-        working-directory: ./myapp
-        run: npm install
-
-      - name: Build React app
-        working-directory: ./myapp
-        run: npm run build
-
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
